@@ -1,0 +1,60 @@
+body{
+    overflow-x: hidden; /*Hides the bottom left right scroll bar when elements stretch beyond the screen border*/
+}
+
+.container{
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#contact{
+    display: block;
+    margin-bottom: 70px;
+}
+
+form{
+    display: table; /*This will display the form in a table format as rows and columns*/
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto; /*The browser will automatically calculate margins to center the form on the screen*/
+}
+
+/*This will specifically target the input tags that are nested within the form tags*/
+form input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: gray;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3s ease-out; /*Transitions back to light gray when a user clicks away from an input field*/
+}
+
+form input:focus{
+    border: 2px solid gray;
+    color: black;
+    outline: none; /*Removes default border added when the focus pseudo class is triggered*/
+    transition: 0.3s ease-out;
+}
+
+input[type="submit"]{
+    background-color: black;
+    border: none;
+    border-radius: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
