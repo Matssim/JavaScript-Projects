@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>St. Johns - Portland</title>
+    <meta charset="UTF-8">
+    <link href="CSS/one_page_website.css" rel="stylesheet">
+    <script src="JS/one_page_website.js" defer></script>
+</head>
+<!--BODY-->
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div>
+            <h2>St. Johns Neighborhood​</h2>
+            <h3>Portland - Oregon</h3>
+        </div>
+    </header>
+    <!---NAVBAR-->
+    <nav>
+        <a href="#Home">Home</a> |
+        <a href="#Images">Images</a> |
+        <a href="#Video">Video</a> |
+        <a href="#Contact">Contact</a>
+    </nav><br>
+    <!--ABOUT-->
+    <section id="Home">
+        Welcome to this unofficial home page for the St. Johns neighborhood in Portland, OR!​<br>
+        <details>
+            <summary>About</summary>
+            <p>
+                St. Johns is a neighborhood of Portland, Oregon, United States, located in North Portland on the tip of
+                the peninsula formed by the confluence of the Willamette River and the Columbia River. The iconic St.
+                Johns Bridge crosses the Willamette from the south, leading into downtown St. Johns. It was a separate,
+                incorporated city from 1902 until 1915, when citizens of both St. Johns and Portland voted to approve
+                its annexation to Portland, which took effect on July 8, 1915.<br>
+                St. Johns is bordered by the Columbia River to the northeast, the Willamette River to the northwest, the
+                North Portland railroad cut to the southeast, and a number of streets separating it from Cathedral Park
+                to the southwest, primarily North Ivanhoe Street.<br>
+                Source: <a href="https://en.wikipedia.org/wiki/St._Johns,_Portland,_Oregon" alt="Link to Wikipedia Article">Wikipedia Article</a>
+            </p>
+        </details>
+    </section>
+    <!--IMAGES-->
+    <section id="Images">
+        <h4>Images</h4>
+        <div class="row">
+            <div class="column">
+                <img src="Images/St._Johns_bridge.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/Lombard_st.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/St._Johns_bizarre.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+        <!--Modal/Lightbox-->
+        <div id="myModal" class="modal row">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1/3</div>
+                    <img src="Images/St._Johns_bridge_wide.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2/3</div>
+                    <img src="Images/Lombard_st_wide.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3/3</div>
+                    <img src="Images/St._Johns_bizarre_wide.jpg" style="width:100%">
+                </div>
+            </div>
+            <!--Next/Prev. image buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!--Caption text-->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <!--Thumbnail image controls-->
+            <div class="column">
+                <img class="demo cursor" src="Images/St._Johns_bridge_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="The St. Johns bridge, crossing the Willamette river from Portland's Forest Park on the west side">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images/Lombard_st_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Slim's Restaurant and Twin Cinema's St. Johns theatre are two popular, local staples located on Lombard
+                street in downtown St Johns.">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="Images/St._Johns_bizarre_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="The St. Johns Bizarre is an annual festival in May, featuring a parade, live music and stands by 
+                local craft artisans">
+            </div>
+        </div>
+    </section>
+    <!--VIDEO-->
+    <section id="Video">
+        <h4>Video</h4>
+        <p>Promo by Travel Portland</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xhKaakq2BZQ?si=m13FjhF9gLHO_P4S"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="St Johns promo video by Travel Portland"></iframe>
+    </section>
+    <!--FORM-->
+    <section id="Contact">
+        <h4>Contact</h4>
+        <p>Have any questions, comments or tips? - Please don't hesitate to fill out the form below and let us know!</p>
+        <form>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Phone Number">
+            <textarea placeholder="Type your message here..."></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section><br>
+    <!--FOOTER-->
+    <section>
+        <footer>
+            Site owned and operated by Mats Simonsen​<br>
+            Portland - Oregon
+        </footer>
+    </section>
+</body>
+
+</html>
