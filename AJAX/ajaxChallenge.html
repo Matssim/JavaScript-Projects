@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ajax Challenge</title>
+        <script src="ajaxChallenge.js" defer></script> <!--Retrives the Javascript code-->
+        <link rel="stylesheet" href="ajaxChallenge.css"> <!--Retrives the styling for the page -->
+    </head>
+    <body>
+        <div id="introduction"> <!--Defines the section that will be replace dby a response when the user enters and submit their name-->
+            <h1>Welcome!</h1>
+            <h3>Who might you be?</h3>
+            <form>
+                <input type="text" id="name" placeholder="Name"><br> <!--Creates the field for the user to input their name-->
+                <input type="button" value="Introduce Yourself" onclick="getRsp();" class="btn"> <!--Creates the submit button-->
+            </form>
+        </div>
+    </body>
+</html>

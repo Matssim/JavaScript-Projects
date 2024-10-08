@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+}
+
+h1, h3, #introductionMsg {
+    color: rgb(32, 109, 8);
+}
+
+.btn {
+    margin: 20px;
+}
