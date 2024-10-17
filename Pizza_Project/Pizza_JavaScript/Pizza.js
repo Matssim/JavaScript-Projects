@@ -55,3 +55,12 @@ function getTopping(runningTotal,text1) {
     document.getElementById("showText").innerHTML = text1; //These functions displays the selections and their correpsonding values added to the total $ amount on the page
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 };
+
+//Form Challenge//
+function ValidateForm() {
+    let x = document.forms["CtcForm"]["form_input"].value;
+    if (x == "") {
+        alert("Please enter your phone number");
+        return false;
+    }
+}

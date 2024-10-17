@@ -44,5 +44,19 @@
                 </div>
             </form>
         </div>
+        <!--Form Challenge-->
+        <div id="contact_form">
+            <h2>Have any questions?</h2><br>
+            <p>Please submit your phone number below and we'll give you a call!</p>
+            <form name="CtcForm" action="/action_page.php" onsubmit="return ValidateForm()" method="post">
+                <input type="text" name="form_input">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <!--Fade Challenge (must be inline script)-->
+        <script>document.body.classList.add('fade-out');</script>
+        <script>window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });</script>
     </body>
 </html>

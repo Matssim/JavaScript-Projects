@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> <!--Loads the JSX library-->
+    </head>
+    <body>
+        <div style="font-size:8vw;" id="JSX"></div> <!--(vw unit challenge)-->
+        <script type="text/babel">
+            class Greeting extends React.Component { //"React.Component" specifies the function
+                render() {
+                    return <h1>Hi there!</h1>
+                }
+            }
+
+            ReactDOM.render(<Greeting />, document.getElementById('JSX'))
+        </script>
+    </body>
+</html>

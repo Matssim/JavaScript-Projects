@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="slideshow">
+            <div>
+                <img src="images/image1.jpg" height="500" width="400">
+            </div>
+            <div>
+                <img src="images/image2.jpg" height="500" width="400">
+            </div>
+            <div>
+                <img src="images/image3.jpg" height="500" width="400">
+            </div>
+        </div>
+        <button class="open-button" onclick="openForm()">Contact us</button>
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Please enter your email address and we'll reach out</h1>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="psw"><b></b></label>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <script src="JavaScript/jQeury.js"></script>
+    </body>
+</html>

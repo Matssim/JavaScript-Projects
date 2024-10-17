@@ -62,6 +62,21 @@
 
 body {
     background-color: rgb(248, 242, 157);
+    /*Fade challenge - start*/
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+    /*Fade challenge - end*/
+
+div {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(39, 99, 0);
+    font-weight: bold;
 }
 
 h1 {
@@ -75,8 +90,21 @@ h3 {
     color: rgb(250, 115, 24);
 }
 
-div {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(39, 99, 0);
-    font-weight: bold;
+h2 {
+    font-family: "Archivo Black", sans-serif;
+    color: rgb(250, 115, 24);
+    display: flex; 
+    justify-content: flex-end;
+}
+
+p {
+    display: flex; 
+    justify-content: flex-end;
+}
+
+#contact_form {
+    width: 600px;
+    height: 200px;
+    margin: 10px auto;
+    text-align: center;
 }

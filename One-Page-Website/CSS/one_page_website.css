@@ -1,6 +1,10 @@
 /*Import link for the Corben font from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap');
 
+/*Bookmark challenge*/
+html {
+    scroll-behavior: smooth;
+}
 
 /*BODY*/
 
