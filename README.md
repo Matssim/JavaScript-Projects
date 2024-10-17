@@ -7,9 +7,9 @@
     - <a href="#pizza">Pizza Project</a><br>
     - <a href="#simple_recipes">Simple Recipes Website</a><br>
     - <a href="#academy_cinemas">Academy Cinemas Website</a><br>
-    - <a href="#calculator">Calculator Project</a>
-    - <a href="#tictactoe">TicTacToe Project</a>
-    - <a href="#todo">Todo App Project</a>
+    - <a href="#calculator">Calculator Project</a><br>
+    - <a href="#tictactoe">TicTacToe Project</a><br>
+    - <a href="#todo">Todo App Project</a><br>
     - <a href="#misc">Miscellaneous Assignments and Challenges</a>
   </p>
   
